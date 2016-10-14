@@ -82,17 +82,8 @@
                     </div>
                     <div class="modal-body">
                     	
-                        <p>Mapping Morton Village is a digital cultural map of the Morton Village archaeological site, located in Central Illinois. This map is an educational tool, focused on describing various aspects of archaeological research and methods. 
-                        </p>
-                        <p>Hover over the table of contents on the map (see image below) to make the layer options appear. To learn about different elements of archaeological research, toggle through each of the layers. These layers represent different excavation years at the site and highlight elements of archaeology.</p>
-			<div class="row centered">
-			<img align:"center" src="photos/layersarrow.png" alt="layers arrow" height="8%" width="8%" hspace="20"> 
-			</div>
-			<p>Each map layer has different orange pins, representing different elements of archaeology at Morton Village, shown through various icons. When you click on the orange pins, a small textbox will appear with a brief description of the highlighted topic with an option to read more on another page. </p>
-                    	
-                    <div class="row centered">
-			<img align:"left" src="photos/pin1.jpg" alt="pin 1" height="8%" width="8%" hspace="20"> <img align:"right" src="photos/pin2.jpg" alt="pin 2" height="8%" width="8%"> 
-			</div>
+                        <p>Welcome to the interactive map of classical Greece!</p>
+                        <p>Blah Blah Blah</p>
 			</div>
                     <div class="modal-footer">
                         <label ><input class="dont" type="checkbox" name="dismiss"> Don't show again</label><br />
@@ -115,17 +106,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">Mapping Morton Village</a>
+          <a class="navbar-brand">Classical Greece</a>
         </div>
         
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">MAP</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="glossary.html">GLOSSARY</a></li>
-            <li><a href="content.html">ARCHAEOLOGY</a></li>
-        
-           <li><a data-toggle="modal" data-target="#myModal2" href="#myModal2"><i class="fa fa-envelope-o"></i></a></li>
+       
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -151,8 +138,8 @@
   
   var map = L.mapbox.map('map', null, {
       maxBounds: bounds,
-    		maxZoom: 19,
-    		minZoom: 18
+    		maxZoom: 6,
+    		minZoom: 5
   });
   
   //.setView([40.373783, -90.089136], 18);
@@ -161,22 +148,22 @@
   
   
   var layers = {
-      Satellite: L.mapbox.tileLayer('mapbox.satellite')
+      Satellite: L.mapbox.tileLayer('mapbox.light')
   };
   
-  var features =  {
-      Structures: L.mapbox.featureLayer('silvani1.p89ogc1c'),
-      'Household & Salvage Archaeology': L.mapbox.featureLayer('silvani1.p89f0jgo'),
-      'Excavation Protocols': L.mapbox.featureLayer('silvani1.p89n5pmi'),
-      'Ceramics': L.mapbox.featureLayer('silvani1.p89n9049'),
-      'Artifact Analysis': L.mapbox.featureLayer('silvani1.p89nc896'),
-      'Botanical & Magnetometry': L.mapbox.featureLayer('silvani1.p89nnc1d'),
-      'Magnetometry Overlay': L.mapbox.tileLayer('silvani1.p8go9h7m'),
-      'Zooarchaeology': L.mapbox.featureLayer('silvani1.p89nphe6'),
-      'Lithics': L.mapbox.featureLayer('silvani1.p89o1o77'),
-      'Public Archaeology': L.mapbox.featureLayer('silvani1.p89o4814'),
+  //var features =  {
+     // Structures: L.mapbox.featureLayer('silvani1.p89ogc1c'),
+      //Household & Salvage Archaeology': L.mapbox.featureLayer('silvani1.p89f0jgo'),
+      //'Excavation Protocols': L.mapbox.featureLayer('silvani1.p89n5pmi'),
+      //'Ceramics': L.mapbox.featureLayer('silvani1.p89n9049'),
+      //'Artifact Analysis': L.mapbox.featureLayer('silvani1.p89nc896'),
+      //'Botanical & Magnetometry': L.mapbox.featureLayer('silvani1.p89nnc1d'),
+      //'Magnetometry Overlay': L.mapbox.tileLayer('silvani1.p8go9h7m'),
+      //'Zooarchaeology': L.mapbox.featureLayer('silvani1.p89nphe6'),
+      //'Lithics': L.mapbox.featureLayer('silvani1.p89o1o77'),
+      //'Public Archaeology': L.mapbox.featureLayer('silvani1.p89o4814'),
       //'Magnetometry': L.mapbox.tileLayer('silvani1.p8go9h7m'),
-  };
+  //};
   
 //var layerGroup = L.layerGroup(Magnetometry).addTo(map);{
 	//L.mapbox.tileLayer('silvani1.p8go9h7m').addTo(layerGroup);
@@ -204,16 +191,16 @@
 	<div id="fmap">
 		<div class="container">
 			<div class="row centered">
-				<img align= "left" style="PADDING-RIGHT: 3%"src="../mappingmv/photos/anp3.png" height="25%" width="25%"/>
+				<!--<img align= "left" style="PADDING-RIGHT: 3%"src="../mappingmv/photos/anp3.png" height="25%" width="25%"/>-->
 				<img align= "left" style="PADDING-LEFT: 3%" src="../mappingmv/photos/chi3.png" height="22%" width="22%"/>
-				<img align= "center" style="PADDING-LEFT: 3%" src="../mappingmv/photos/dicksonmoundsHOZ.png" height="20%" width="20%"/>
+				<!--<img align= "center" style="PADDING-LEFT: 3%" src="../mappingmv/photos/dicksonmoundsHOZ.png" height="20%" width="20%"/>-->
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img align="right" style="PADDING-LEFT: 3%" height="12%" width="12%" alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 				</div><!-- row -->
 		</div><!-- container -->
 	</div><!-- Footer -->
 	
 	<!-- MODAL FOR CONTACT -->
-	<!-- Modal -->
+	<!-- Modal 
 	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog2">
 	    <div class="modal-content">
