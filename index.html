@@ -132,18 +132,16 @@
 <script>
 						
 	L.mapbox.accessToken = 'pk.eyJ1Ijoic2lsdmFuaTEiLCJhIjoiY2lsM3plbjM4M3R6Z3Z5bTM0ZXcza3hyNCJ9.rnsht5OVsoydxO8-DDdYUg';
-  
-	//var mapTooltipsJS = L.mapbox.map('map-tooltips-js', 'mapbox.light')
-  .setView([38, 24], 7)
+ 
 	
-	//var southWest = L.latLng(21.2, 36.3),
-  	//northEast = L.latLng(32.9, 44.3),
-  	//bounds = L.latLngBounds(southWest, northEast);
+	var southWest = L.latLng(10.3, 32.2),
+  	northEast = L.latLng(34.5, 42.6),
+  	bounds = L.latLngBounds(southWest, northEast);
   
- // var map = L.mapbox.map('map', null, {
-     // maxBounds: bounds,
-    		//maxZoom: 6,
-    		//minZoom: 5
+  var map = L.mapbox.map('map', null, {
+      maxBounds: bounds,
+    		maxZoom: 6,
+    		minZoom: 5
   });
   
   //.setView([40.373783, -90.089136], 18);
